@@ -25,3 +25,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+@font-face {
+  font-family: "escrituralhebrew";
+  src: url(//public/EscrituraHebrew.otf);
+}
