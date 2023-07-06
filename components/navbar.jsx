@@ -9,7 +9,7 @@ const Navbar = () => {
       <Link href="/about">About</Link>
       <Image src={logo} className="w-[170px] h-[70px]"></Image>
       <Link href="/menu">Menu</Link>
-      <Link href="#">Order</Link>
+      <Link href="https://linktr.ee/dapur_koja">Order</Link>
     </div>
   )
 }
