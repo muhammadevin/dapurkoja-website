@@ -1,7 +1,6 @@
 import { Footer, Navbar, Button, MenuCard } from "../../components"
 import Link from "next/link"
 import Image from 'next/image'
-import texture from '../../public/texture.jpeg'
 import menuheader from '../../public/menuheader.png'
 import supabase from '../../utils/supabase'
 
@@ -27,7 +26,7 @@ const Menu = async () => {
         <div className="flex flex-row gap-10 justify-center items-center min-h-[40px] md:h-[100px] text-secondary 
                         font-semibold text-sm md:text-xl border-b border-secondary border-opacity-25">
           {Array.from(new Set(menuItems.map(item => item.category))).map((category, index) => (
-            <Link key={index} href={`#${category}`}>{category}</Link>
+            <Link key={index} href={`#${category}`} scroll={false}>{category}</Link>
           ))}
         </div>
 
