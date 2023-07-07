@@ -1,6 +1,5 @@
 'use client'
 
-import './index.css'
 import Image from 'next/image'
 import texture from '../public/texture.jpeg'
 import gofood from '../public/gofood.png'
@@ -62,13 +61,13 @@ export default function Home() {
           <Image src={sambal} className="h-full w-[350px] object-cover"></Image>
         </div>
         
-        <div className='flex flex-col justify-center items-center gap-6 mt-8'>
-          <h1 className='font-sans font-semibold text-secondary text-xl'>Open every Monday-Saturday 11AM - 9PM</h1>
+        <div className='flex flex-col justify-center items-center gap-6 mt-8 px-8'>
+          <h1 className='font-sans font-semibold text-center text-secondary text-xl'>Open every Monday-Saturday 11AM - 9PM</h1>
           <Button text="Order now" link="https://linktr.ee/dapur_koja"></Button>
           <div className='flex flex-row gap-6 items-center'>
-            <Image src={grabfood} className="w-[162px] h-[30px]"></Image>
-            <Image src={gofood} className="w-[164px] h-[40px]"></Image>
-            <Image src={shopeefood} className="w-[200px] h-[39px]"></Image>
+            <Image src={grabfood} className="w-[72px] h-auto sm:w-[142px]"></Image>
+            <Image src={gofood} className="w-[74px] h-auto sm:w-[144px]"></Image>
+            <Image src={shopeefood} className="w-[100px] h-auto sm:w-[180px]"></Image>
           </div>
         </div>
       </div>
