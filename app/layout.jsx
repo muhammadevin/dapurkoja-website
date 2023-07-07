@@ -35,6 +35,7 @@ const escrituralhebrew = localFont({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head/>
       <body className={`${escrituralhebrew.variable} font-sans`}>{children}</body>
     </html>
   )
