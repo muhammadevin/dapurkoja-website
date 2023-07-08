@@ -28,7 +28,7 @@ const Footer = () => {
       </div>
 
       <div className='flex w-[164px] md:w-[188px] justify-start md:justify-end'>
-        <Image src={halal} className="w-[32px] h-[32px] md:w-[64px] md:h-[64px] lg:w-[84px] lg:h-[84px]" />
+        <Image alt='halal' src={halal} className="w-[32px] h-[32px] md:w-[64px] md:h-[64px] lg:w-[84px] lg:h-[84px]" />
       </div>
     </div>
   )

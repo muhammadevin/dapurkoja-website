@@ -56,18 +56,18 @@ export default function Home() {
         <Navbar />
 
         <div className="scrolling_images h-[400px] w-full flex flex-row overflow-auto gap-6 mx-auto justify-center" ref={containerRef}>
-          <Image src={ayam} className="h-full w-full object-cover"></Image>
-          <Image src={makan} className="h-full w-[1750px] object-cover"></Image>
-          <Image src={sambal} className="h-full w-[350px] object-cover"></Image>
+          <Image alt='ayam' src={ayam} className="h-full w-full object-cover"></Image>
+          <Image alt='makan' src={makan} className="h-full w-[1750px] object-cover"></Image>
+          <Image alt='sambal' src={sambal} className="h-full w-[350px] object-cover"></Image>
         </div>
         
         <div className='flex flex-col justify-center items-center gap-6 mt-8 px-8'>
           <h1 className='font-sans font-semibold text-center text-secondary text-xl'>Open every Monday-Saturday 11AM - 9PM</h1>
           <Button text="Order now" link="https://linktr.ee/dapur_koja"></Button>
           <div className='flex flex-row gap-6 items-center'>
-            <Image src={grabfood} className="w-[72px] h-auto sm:w-[142px]"></Image>
-            <Image src={gofood} className="w-[74px] h-auto sm:w-[144px]"></Image>
-            <Image src={shopeefood} className="w-[100px] h-auto sm:w-[180px]"></Image>
+            <Image alt='grabfood' src={grabfood} className="w-[72px] h-auto sm:w-[142px]"></Image>
+            <Image alt='gofood' src={gofood} className="w-[74px] h-auto sm:w-[144px]"></Image>
+            <Image alt='shopeefood' src={shopeefood} className="w-[100px] h-auto sm:w-[180px]"></Image>
           </div>
         </div>
       </div>

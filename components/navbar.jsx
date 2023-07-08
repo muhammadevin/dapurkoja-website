@@ -18,13 +18,13 @@ const Navbar = () => {
       text-lg font-semibold text-secondary cursor-pointer'>
         <li className=''><a href="/">Home</a></li>
         <li className=''><a href="/about">About</a></li>
-        <li><Image src={logo} className="w-[170px] h-[70px]"></Image></li>
+        <li><Image alt='logo' src={logo} className="w-[170px] h-[70px]"></Image></li>
         <li className=''><a href="/menu">Menu</a></li>
         <li className=''><a href="https://linktr.ee/dapur_koja">Order</a></li>
       </ul>
 
       <div className='sm:hidden flex flex-row w-full justify-between items-center'>
-        <Image src={logo} className="w-[170px] h-[70px]"></Image>
+        <Image alt='logo' src={logo} className="w-[170px] h-[70px]"></Image>
         <Image src={toggle ? close : list} alt="menu" 
         className='w-[20px] h-[20px] object-contain' onClick={() => setToggle((prev) => !prev)}/>
 

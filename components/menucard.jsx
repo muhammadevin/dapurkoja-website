@@ -6,9 +6,9 @@ const MenuCard = ({title, desc, imageSrc, price}) => {
     <div className="flex flex-row border border-red-600 rounded-md px-4 py-2 w-full max-w-[480px] min-h-[140px] items-center gap-4">
       {
         imageSrc ? (
-          <Image src={imageSrc} width="100" height="100" className="rounded-md object-cover w-[100px] h-[100px]"></Image>
+          <Image alt={title} src={imageSrc} width="100" height="100" className="rounded-md object-cover w-[100px] h-[100px]"></Image>
         ) : (
-          <Image src={menuImg} width="100" height="100" className="rounded-md object-cover w-[100px] h-[100px]"></Image>
+          <Image alt="prodplaceholder" src={menuImg} width="100" height="100" className="rounded-md object-cover w-[100px] h-[100px]"></Image>
         )
       }
       <div className='flex flex-col flex-1 gap-2 text-red-600'>

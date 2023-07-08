@@ -15,7 +15,7 @@ const Menu = async () => {
         <Navbar />
 
         <div className="relative w-full h-[200px] md:h-[420px] lg:h-[680px]">
-          <Image src={menuheader} className="h-full object-cover" />
+          <Image alt="menuheader" src={menuheader} className="h-full object-cover" />
           <div className="absolute z-30 inset-0 flex flex-col items-center gap-4 justify-center">
             <div className="w-[200px] border-2 border-primary rounded-md justify-center items-center text-center px-4 py-2 ">
               <h2 className="font-bold text-3xl">Our Menu</h2>
@@ -33,7 +33,7 @@ const Menu = async () => {
         <div className="px-4 sm:px-20 pt-8 pb-20 xl:px-48 gap-5 items-center justify-center">
           <div className="flex flex-col w-full gap-10 px-4 lg:px-20 text-secondary  items-center justify-center">
             {Array.from(new Set(menuItems.map(item => item.category))).map((category, index) => (
-              <div id={category} className="flex flex-col gap-4 w-full h-full">
+              <div key={index} id={category} className="flex flex-col gap-4 w-full h-full">
                 <h2 className="font-bold md:text-2xl">{category}</h2>
                 <div className="grid md:grid-cols-2 gap-x-8 gap-y-4 items-center justify-items-center" key={index}>
                   {menuItems.filter(item => item.category === category).map((item, itemIndex) => (

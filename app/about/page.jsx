@@ -24,7 +24,7 @@ const About = () => {
         <Navbar />
 
         <div className="relative w-full h-[400px] sm:h-[680px]">
-          <Image src={aboutheader} className="h-full object-cover" />
+          <Image alt="aboutheader" src={aboutheader} className="h-full object-cover" />
           <div className="absolute z-30 inset-0 flex flex-col items-center gap-2 sm:gap-4 justify-center px-8 w-full">
             <div className="w-[200px] border-2 border-primary rounded-md justify-center text-center items-center px-4 py-2 mb-8">
               <h2 className="font-bold text-lg sm:text-3xl">Our Story</h2>
@@ -36,8 +36,8 @@ const About = () => {
 
         <div className="flex flex-col px-10 lg:px-0 py-8 lg:flex-row w-full max-h-[750px] lg:py-20 items-center gap-8 lg:pr-24">
           <div className="hidden lg:flex flex-row scrolling_images overflow-auto w-3/5 float-left gap-8">
-            <Image src={kasam1} className="w-[520px] h-[520px]" />
-            <Image src={kasam2} className="w-[520px] h-[520px]" />
+            <Image alt="masak1" src={kasam1} className="w-[520px] h-[520px]" />
+            <Image alt="masak2" src={kasam2} className="w-[520px] h-[520px]" />
           </div>
           <div className="w-full px-10 lg:w-2/5 flex flex-col gap-2 lg:gap-5 float-right text-center text-xs md:text-sm lg:text-base lg:text-left">
             <p className=" font-semibold text-red-600">In Dapur Koja, we are trying to be sustainable as much as we can. We minimize of using plastic, that is why we use an eco-friendly packaging like recyclable meal box, wooden cutleries, and paper bag. We also homegrown our ingredients which is the main ingredient on all of our product; Daun Salam Koja. We also shop our ingredients from local market everyday to make sure everything is fresh while also supporting local goods.</p>
@@ -48,8 +48,8 @@ const About = () => {
             <p className=" font-semibold text-red-600">all across the city.</p>
           </div>
           <div className="flex flex-row scrolling_images w-full gap-4 object-cover lg:hidden justify-center">
-            <Image src={kasam1} className="w-auto h-[180px] md:h-[320px]" />
-            <Image src={kasam2} className="w-auto h-[180px] md:h-[320px]" />
+            <Image alt="masak1" src={kasam1} className="w-auto h-[180px] md:h-[320px]" />
+            <Image alt="masak2" src={kasam2} className="w-auto h-[180px] md:h-[320px]" />
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const About = () => {
             {collabs.map((collab, index) => (
               <div key={index} className="flex flex-col gap-3 items-center justify-center">
                 <p className="text-sm md:text-lg font-bold text-red-600">{collab.title}</p>
-                <Image src={collab.image} className="w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-lg" />
+                <Image alt={collab.title} src={collab.image} className="w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-lg" />
               </div>
             ))}
           </div>
