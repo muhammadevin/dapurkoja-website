@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { BsInstagram } from 'react-icons/bs'
 import { FiMail } from 'react-icons/fi'
-import halal from '../public/halal.png'
 
 const Footer = () => {
   return (
@@ -10,25 +9,21 @@ const Footer = () => {
         <a href="https://www.instagram.com/dapur_koja/">
           <div className='flex items-center gap-2'>
             <BsInstagram />
-            <p className='text-xs md:text-sm'>@dapur_koja</p>
+            <p className='text-base md:text-xl'>@dapur_koja</p>
           </div>
         </a>
         <a href="mailto:halo.dapurkoja@gmail.com">
           <div className='flex items-center gap-2'>
             <FiMail />
-            <p className='text-xs md:text-sm'>halo.dapurkoja@gmail.com</p>
+            <p className='text-base md:text-xl'>halo.dapurkoja@gmail.com</p>
           </div>
         </a>
       </div>
 
       <div className='flex flex-col gap-1 text-left md:text-center w-[344px]'>
-        <h4 className='text-xs md:text-lg font-bold'>FRESHLY MADE BY ORDER EVERYDAY</h4>
-        <p className='text-xs md:text-lg font-semibold'>No MSG, No preservatives</p>
-        <p className='text-xs md:text-base'>© 2023 Dapur Koja. All rights reserved.</p>
-      </div>
-
-      <div className='flex w-[164px] md:w-[188px] justify-start md:justify-end'>
-        <Image alt='halal' src={halal} className="w-[32px] h-[32px] md:w-[64px] md:h-[64px] lg:w-[84px] lg:h-[84px]" />
+        <h4 className='text-base md:text-right md:text-lg font-bold'>FRESHLY MADE BY ORDER EVERYDAY</h4>
+        <p className='text-base md:text-right md:text-lg font-semibold'>No pork, No lard, No MSG, No preservatives</p>
+        <p className='text-base md:text-right md:text-base'>© 2023 Dapur Koja. All rights reserved.</p>
       </div>
     </div>
   )

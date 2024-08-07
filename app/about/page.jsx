@@ -25,12 +25,12 @@ const About = () => {
 
         <div className="relative w-full h-[400px] sm:h-[680px]">
           <Image alt="aboutheader" src={aboutheader} className="h-full object-cover" />
-          <div className="absolute z-30 inset-0 flex flex-col items-center gap-2 sm:gap-4 justify-center px-8 w-full">
-            <div className="w-[200px] border-2 border-primary rounded-md justify-center text-center items-center px-4 py-2 mb-8">
-              <h2 className="font-bold text-lg sm:text-3xl">Our Story</h2>
+          <div className="absolute z-30 inset-0 flex flex-col items-center tracking-tighter gap-2 sm:gap-4 justify-center px-8 w-full">
+            <div className="w-[200px] border-2 border-primary rounded-md justify-center text-center items-center px-4 py-2 mb-2 md:mb-4">
+              <h2 className="font-bold text-xl sm:text-4xl">Our Story</h2>
             </div>
-            <p className="max-w-[580px] text-center text-xs sm:text-base">Dapur Koja was established in July 2019. Starting from a home kitchen in the area of Bintaro, South Tangerang, which is sold on a pre-order basis and now are available through an online food application. </p>
-            <p className="max-w-[580px] text-center text-xs sm:text-base">The name Koja is taken from Daun Salam Koja or well known as curry leaf as Daun Salam Koja is the main ingredient that we use in all our menus. At first we only had 1 menu which is Buttermilk Chicken and as the time goes, we have developed several menus. Not only we serve chicken, we also have beef tongue, and we will keep developing for upcoming menus.</p>
+            <p className="max-w-[580px] leading-tight text-center text-base sm:text-2xl">Dapur Koja was established in July 2019. Starting from a home kitchen in the area of Bintaro, South Tangerang, which is sold on a pre-order basis and now are available through an online food application. </p>
+            <p className="max-w-[580px] leading-tight text-center text-base sm:text-2xl">The name Koja is taken from Daun Salam Koja or well known as curry leaf as Daun Salam Koja is the main ingredient that we use in all our menus. At first we only had 1 menu which is Buttermilk Chicken and as the time goes, we have developed several menus. Not only we serve chicken, we also have beef tongue, and we will keep developing for upcoming menus.</p>
           </div>
         </div>
 
@@ -39,7 +39,7 @@ const About = () => {
             <Image alt="masak1" src={kasam1} className="w-[520px] h-[520px]" />
             <Image alt="masak2" src={kasam2} className="w-[520px] h-[520px]" />
           </div>
-          <div className="w-full px-10 lg:w-2/5 flex flex-col gap-2 lg:gap-5 float-right text-center text-xs md:text-sm lg:text-base lg:text-left">
+          <div className="w-full px-10 lg:w-2/5 flex flex-col gap-2 lg:gap-5 float-right leading-tight tracking-tighter text-center text-base md:text-lg lg:text-lg lg:text-left">
             <p className=" font-semibold text-red-600">In Dapur Koja, we are trying to be sustainable as much as we can. We minimize of using plastic, that is why we use an eco-friendly packaging like recyclable meal box, wooden cutleries, and paper bag. We also homegrown our ingredients which is the main ingredient on all of our product; Daun Salam Koja. We also shop our ingredients from local market everyday to make sure everything is fresh while also supporting local goods.</p>
             <p className=" font-semibold text-red-600">When we first started in 2020, we sold </p>
             <p className="text-xl lg:text-3xl font-bold text-red-600">2,854 boxes.</p>
@@ -55,13 +55,13 @@ const About = () => {
 
         <div className="flex flex-col gap-10 pt-6 pb-12 px-8 md:py-20 md:px-12 items-center">
           <div className="w-[200px] md:w-full max-w-[450px] border-2 border-red-600 rounded-md justify-center text-center px-4 py-2">
-            <h2 className="font-extrabold text-lg md:text-3xl text-red-600">Previous Collaborations</h2>
+            <h2 className="font-extrabold text-xl md:text-3xl text-red-600">Previous Collaborations</h2>
           </div>
 
           <div className="flex flex-row gap-2 md:gap-5">
             {collabs.map((collab, index) => (
               <div key={index} className="flex flex-col gap-3 items-center justify-center">
-                <p className="text-sm md:text-lg font-bold text-red-600">{collab.title}</p>
+                <p className="text-center tracking-tighter text-base md:text-xl font-bold text-red-600">{collab.title}</p>
                 <Image alt={collab.title} src={collab.image} className="w-[150px] h-[150px] md:w-[250px] md:h-[250px] rounded-lg" />
               </div>
             ))}

@@ -4,7 +4,6 @@ import Image from 'next/image'
 import texture from '../public/texture.jpeg'
 import gofood from '../public/gofood.png'
 import grabfood from '../public/grabfood.png'
-import shopeefood from '../public/shopeefood.png'
 
 import ayam from '../public/ayam.png'
 import makan from '../public/makan.png'
@@ -61,13 +60,13 @@ export default function Home() {
           <Image alt='sambal' src={sambal} className="h-full w-[350px] object-cover"></Image>
         </div>
         
-        <div className='flex flex-col justify-center items-center gap-6 mt-8 px-8'>
-          <h1 className='font-sans font-semibold text-center text-secondary text-xl'>Open every Monday-Saturday 11AM - 9PM</h1>
+        <div className='flex flex-col justify-center items-center gap-2 md:gap-4 mt-4 px-8'>
+          <h1 className='font-sans font-semibold text-center text-secondary text-3xl'>Open daily</h1>
+          <h1 className='font-sans font-semibold text-center text-secondary text-2xl'>11AM - 9PM</h1>
           <Button text="Order now" link="https://linktr.ee/dapur_koja"></Button>
-          <div className='flex flex-row gap-6 items-center'>
+          <div className='flex flex-row gap-6 items-center mt-2'>
             <Image alt='grabfood' src={grabfood} className="w-[72px] h-auto sm:w-[142px]"></Image>
             <Image alt='gofood' src={gofood} className="w-[74px] h-auto sm:w-[144px]"></Image>
-            <Image alt='shopeefood' src={shopeefood} className="w-[100px] h-auto sm:w-[180px]"></Image>
           </div>
         </div>
       </div>
