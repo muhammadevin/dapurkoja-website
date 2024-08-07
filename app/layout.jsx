@@ -2,31 +2,21 @@ import './globals.css'
 import Head from './head.jsx'
 
 import localFont from 'next/font/local'
-const escrituralhebrew = localFont({
+const gaegu = localFont({
   src:[
     {
-      path: '../public/EscrituraHebrew-Medium.otf',
+      path: '../public/gaegu/Gaegu-Light.ttf',
       weight: '300',
       style: 'normal',
     },
     {
-      path: '../public/EscrituraHebrew.otf',
+      path: '../public/gaegu/Gaegu-Regular.ttf',
       weight: '400',
       style: 'normal',
     },
     {
-      path: '../public/EscrituraHebrew-DemiBold.otf',
-      weight: '600',
-      style: 'normal',
-    },
-    {
-      path: '../public/EscrituraHebrew-Bold.otf',
+      path: '../public/gaegu/Gaegu-Bold.ttf',
       weight: '700',
-      style: 'normal',
-    },
-    {
-      path: '../public/EscrituraHebrew-ExtraBold.otf',
-      weight: '800',
       style: 'normal',
     },
   ],
@@ -37,7 +27,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head />
-      <body className={`${escrituralhebrew.variable} font-sans`}>{children}</body>
+      <body className={`${gaegu.variable} font-sans`}>{children}</body>
     </html>
   )
 }

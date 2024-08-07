@@ -33,8 +33,8 @@ body {
 }
 
 @font-face {
-  font-family: "escrituralhebrew";
-  src: url(//public/EscrituraHebrew.otf);
+  font-family: "gaegu";
+  src: url(//public/gaegu/Gaegu-Regular.ttf);
 }
 
 .bg-texture {
