@@ -4,7 +4,7 @@ import { FiMail } from 'react-icons/fi'
 
 const Footer = () => {
   return (
-    <div className='pb-10 w-full gap-4 flex flex-col md:flex-row pt-8 px-4 py-4 md:px-16 md:py-10 bg-secondary justify-between'>
+    <div className='pb-10 w-full gap-4 flex flex-col md:flex-row pt-8 px-4 py-4 md:px-16 md:py-10 text-white bg-secondary justify-between'>
       <div className='flex flex-col gap-4 items-start w-[164px] md:w-[188px]'>
         <a href="https://www.instagram.com/dapur_koja/">
           <div className='flex items-center gap-2'>

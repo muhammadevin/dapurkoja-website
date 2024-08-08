@@ -25,7 +25,7 @@ const About = () => {
 
         <div className="relative w-full h-[400px] sm:h-[680px]">
           <Image alt="aboutheader" src={aboutheader} className="h-full object-cover" />
-          <div className="absolute z-30 inset-0 flex flex-col items-center tracking-tighter gap-2 sm:gap-4 justify-center px-8 w-full">
+          <div className="absolute z-30 inset-0 flex flex-col items-center text-white tracking-tighter gap-2 sm:gap-4 justify-center px-8 w-full">
             <div className="w-[200px] border-2 border-primary rounded-md justify-center text-center items-center px-4 py-2 mb-2 md:mb-4">
               <h2 className="font-bold text-xl sm:text-4xl">Our Story</h2>
             </div>

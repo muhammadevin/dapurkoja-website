@@ -19,7 +19,7 @@ const Menu = async () => {
 
         <div className="relative w-full h-[200px] md:h-[420px] lg:h-[680px]">
           <Image alt="menuheader" src={menuheader} className="h-full object-cover" />
-          <div className="absolute z-30 inset-0 flex flex-col items-center gap-4 justify-center">
+          <div className="absolute z-30 inset-0 flex flex-col text-white items-center gap-4 justify-center">
             <div className="w-[200px] border-2 border-primary rounded-md justify-center items-center text-center px-4 py-2 ">
               <h2 className="font-bold text-4xl">Our Menu</h2>
             </div>
